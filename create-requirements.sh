@@ -5,3 +5,5 @@ if [[ -z "$VIRTUAL_ENV" ]]; then
 fi
 
 pip freeze | grep --invert-match pkg_resources > requirements.txt
+
+git add requirements.txt
